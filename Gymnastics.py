@@ -316,7 +316,7 @@ def looping():
 
 _thread.start_new_thread(looping,())
 
-xc = XChat.XChat("DQJLSTOKEN", "xq102210", "Gymdemocs", "Shimano105YYDS")
+xc = XChat.XChat("==保密==")
 xc.message_function += [message_got]
 xc.join_function += [user_join]  
 xc.leave_function += [user_leave]
