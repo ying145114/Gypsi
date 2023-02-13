@@ -69,21 +69,21 @@ _____
 
 def reload():                                                                           #设置reload函数，重新读取文件中的字符。
     OPlist.clear()
-    with open('using/TrustedUsers.txt', encoding='utf-8') as OPget:
+    with open('TrustedUsers.txt', encoding='utf-8') as OPget:
         line1 = OPget.readlines()
         for line in line1:
             OPlist.append(line.strip('\n'))
         OPget.close()
 
     namefakeban.clear()
-    with open('ban/bannedname.txt', encoding='utf-8') as BN:
+    with open('bannedname.txt', encoding='utf-8') as BN:
         line2 = BN.readlines()
         for line in line2:
             namefakeban.append(line.strip('\n'))
         BN.close()
 
     tripfakeban.clear()
-    with open('ban/bannedtrip.txt', encoding='utf-8') as BT:
+    with open('bannedtrip.txt', encoding='utf-8') as BT:
         line3 = BT.readlines()
         for line in line3:
             tripfakeban.append(line.strip('\n'))
