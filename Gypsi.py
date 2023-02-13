@@ -119,7 +119,7 @@ def message_got(message, sender, trip):                                         
 |指令|{name}|
 |-|-|
 |作用|{detail}|
-使用方法：输入{using}'''.format(name=CNL[CommandAll], detail=CDL[CommandAll], using=CUL[CommandAll])
+使用方法：输入{using}'''.format(name=CNL[CommandAll], detail=CDL[CommandAll], using=CUL[CommandAll]))
             else:                                                                        #查询了错误的命令。
                 xc.send_message("未知命令。")
 
